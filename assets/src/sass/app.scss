@@ -1,0 +1,61 @@
+// ----------------------------------------------
+// App
+// ----------------------------------------------
+
+// Settings
+
+@import "settings/settings";
+
+// I wouldn't put this here, but for now, this works...
+
+body {
+  background: $slate-light;
+  color: $slate;
+  margin-bottom: 60px; // for the sticky footer
+
+  > .container {
+    padding-top: 50px; // for the navbar
+  }
+
+  &.red {
+    background: $red-light;
+    color: $red;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $red-dark;
+    }
+
+    .footer {
+      background-color: $red-dark;
+      color: $red-light;
+    }
+  }
+
+  &.blue {
+    background: $blue-light;
+    color: $blue;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $blue-dark;
+    }
+
+    .footer {
+      background-color: $blue-dark;
+      color: $blue-light;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $slate-dark;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  line-height: 60px;
+  width: 100%;
+  height: 60px;
+  background-color: $slate-dark;
+  color: $slate-light;
+}
