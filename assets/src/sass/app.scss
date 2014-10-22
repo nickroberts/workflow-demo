@@ -8,14 +8,17 @@
 
 // I wouldn't put this here, but for now, this works...
 
+// for the sticky footer
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
   background: $slate-light;
   color: $slate;
   margin-bottom: 60px; // for the sticky footer
-
-  > .container {
-    padding-top: 50px; // for the navbar
-  }
+  padding-bottom: 50px;
 
   &.red {
     background: $red-light;

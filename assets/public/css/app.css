@@ -1,9 +1,12 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
 body {
   background: #efeff4;
   color: #45454c;
-  margin-bottom: 60px; }
-  body > .container {
-    padding-top: 50px; }
+  margin-bottom: 60px;
+  padding-bottom: 50px; }
   body.red {
     background: #f7e2e2;
     color: #cb4e52; }
